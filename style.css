@@ -42,15 +42,6 @@ a:hover {
   
 }
 
-.orange {
-  color: #ff5924;
-}
-.blue {
-  color: #0000ff;
-}
-.yellow {
-  color: #ffbd22;
-}
 .buttonWhite {
   background-color: white;
   color: #202020;
@@ -77,6 +68,8 @@ img {
 }
 .img {
   width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex {
@@ -161,7 +154,7 @@ footer {
   margin-top: 150px;
   background-color: #202020;
 }
-footer p, footer h2 {
+footer p, footer h2, footer a {
   color: white;
 }
 footer img {
@@ -180,6 +173,10 @@ footer img {
   }
   h3 {
     font-size: 13px;
+  }
+  
+  .img {
+    width: 70%;
   }
   
   .flex {
