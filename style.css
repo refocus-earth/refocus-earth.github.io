@@ -79,15 +79,15 @@ img {
   margin-top: 10px;
 }
 
-
 header div {
   background-color: #fff7e6ff;
   padding-top: 70px;
   padding-bottom: 70px;
+  text-align: center;
+
 }
 header div img {
   width: 50%;
-  margin-left: 25%;
 }
 header .backButton {
   text-align: left;
@@ -127,12 +127,12 @@ main .profile {
 
 footer {
   background-color: #202020;
-  margin-top: 80px;
+  margin-top: 100px;
   padding-top: 40px;
   padding-bottom: 15px;
 }
 footer img {
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,8 +175,11 @@ footer p {
     margin-top: 20px;
   }
   footer {
-    margin-top: 60px;
+    margin-top: 80px;
     padding-top: 10px;
+  }
+  footer img {
+    width: 80%;
   }
 }
 
