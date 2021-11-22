@@ -15,23 +15,44 @@ html, body {
   background-color: white;
 }
 
-p, h1, h2, h3 {
+h1, h2, h3, p, ul {
   color: #202020;
   font-family: 'lunchtype22-regular-webfont', sans-serif;
   font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-p {
-  font-size: 25px;
+h1 {
+  font-size: 50px;
+  text-align: center;
+  max-width: 800px;
 }
 h2 {
   font-size: 35px;
-}
-h1 {
-  font-size: 60px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 h3 {
-  font-size: 15px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 3px;
+}
+p {
+  font-size: 24px;
+  max-width: 600px;
+  padding-top: 10px;
+}
+ul {
+  font-size: 24px;
+  max-width: 600px;
+}
+li {
+  margin-left: 23px;
+  padding-top: 10px;
 }
 
 a {
@@ -42,197 +63,137 @@ a:hover {
   
 }
 
-.buttonWhite {
-  background-color: white;
-  color: #202020;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.buttonGrey {
-  background-color: #ededed;
-  color: #202020;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
 img {
   width: 100%;
 }
-.img {
-  width: 40%;
+
+
+.linkButton {
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid #202020;
+  padding: 2px 15px 2px 15px;
+  border-radius: 30px;
+}
+.linkButtonContainer {
+  margin-top: 10px;
+}
+
+
+header div {
+  background-color: #fff7e6ff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+header div img {
+  width: 50%;
+  margin-left: 25%;
+}
+header .backButton {
+  text-align: left;
+}
+header .backButton a {
+  text-decoration: none;
+}
+
+
+main {
+  margin-top: 80px;
+}
+main .fieldContainer {
+  margin: 15px;
+}
+main .field {
+  padding: 20px;
+  background-color: #fff7e6ff;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.flex {
+main .profileContainer {
   display: flex;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.flex p, .flex div {
+main .profile {
+  text-align: center;
+  margin-top: 30px;
   flex: 1;
 }
-.center {
-  text-align: center;
-}
-.maxWidth {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.maxWidthSingle {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.paddingSmall {
-  padding: 20px;
-}
-.paddingBig {
-  padding: 180 20 20 20;
-}
-.paddingBigJustTop {
-  padding-top: 80px;
-}
-.paddingTopVerySmall {
-  padding-top: 20px;
-}
-.paddingBottomVerySmall {
-  padding-bottom: 20px;
-}
-.border {
-  background-color: #ededed;
-  border-radius: 20px;
-  margin: 20px;
-}
-.floatRight {
-  float: right;
-}
-.upcoming {
-  padding: 10px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  border-radius: 100%;
-  background-color: #ffbd22;
-  position: absolute;
-  text-transform: uppercase;
-  color: white;
-  margin-left: -30px;
-  margin-top: -60px;
-}
 
-#seminar h2 {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-header p a {
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-header p a:first-child {
-  float: left;
-  margin-left: 20px;
-}
 
 footer {
-  margin-top: 150px;
   background-color: #202020;
-}
-footer p, footer h2, footer a {
-  color: white;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 footer img {
-  width: 300px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer p, footer a {
+  color: white;
+}
+footer p {
+  text-align: center;
+  margin-top: 50px;
 }
 
 @media (max-width: 800px) {
-  p {
-    font-size: 22px;
+  h1 {
+    font-size: 32px;
   }
   h2 {
     font-size: 27px;
   }
-  h1 {
-    font-size: 38px;
-  }
   h3 {
-    font-size: 13px;
+    font-size: 25px;
+  }
+  p, ul {
+    font-size: 22px;
+  }
+  li {
+    margin-left: 22px;
   }
   
-  .img {
-    width: 70%;
+  header div {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  
-  .flex {
+  main {
+    margin-top: 50px;
+  }
+  main .profileContainer {
     display: block;
   }
-  .border {
-    margin: 15px;
-  }
-  .paddingSmall {
-    padding: 15px;
-  }
-  .paddingBig {
-    padding: 90 15 15 15;
-  }
-  .paddingBigJustTop {
-    padding-top: 30px;
-  }
-  header p a {
-    margin-right: 15px;
-    margin-top: 15px;
-  }
-  header p a:first-child {
-    margin-left: 15px;
-  }
-  .floatRight {
-    float: none;
-  }
-  
-  .upcoming {
-    padding: 10px;
-    padding-top: 33px;
-    padding-bottom: 33px;
-    border-radius: 100%;
-    margin-left: -20px;
-    margin-top: -50px;
-  }
-  
-  footer img {
-    width: 80%;
+  main .profile {
+    margin-top: 20px;
   }
   footer {
-    margin-top: 100px;
+    margin-top: 60px;
+    padding-top: 10px;
   }
 }
 
 @media (max-width: 400px) {
-  p {
-    font-size: 18px;
+  h1 {
+    font-size: 27px;
   }
   h2 {
     font-size: 24px;
   }
-  h1 {
-    font-size: 31px;
-  }
   h3 {
-    font-size: 12px;
+    font-size: 22px;
+  }
+  p, ul {
+    font-size: 18px;
+  }
+  li {
+    margin-left: 18px;
   }
 }
